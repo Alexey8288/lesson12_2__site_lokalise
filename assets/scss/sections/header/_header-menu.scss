@@ -1,5 +1,5 @@
-@use "../../presets";
-@use "../../mixins";
+@use "../../presets" as *;
+@use "../../mixins" as *;
 
 .header-menu {
 display: flex;
