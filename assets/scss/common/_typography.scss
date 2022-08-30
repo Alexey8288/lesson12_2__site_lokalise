@@ -1,0 +1,25 @@
+@use "../presets";
+@use "../mixins";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    // размер для просчета отступов 
+    font-size: 16px;
+}
+
+body {
+    font-family: sans-serif;
+    // размер текста по умолчанию
+    font-size: 15px;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: $color-black;
+}

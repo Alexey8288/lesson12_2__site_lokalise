@@ -1,3 +1,7 @@
 @use "../../libs/normalize";
 
-@use "sections/header/header";
+@use "common";
+
+@use "sections/header";
+
+@use "sections/main";
