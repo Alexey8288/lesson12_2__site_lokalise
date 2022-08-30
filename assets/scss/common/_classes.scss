@@ -1,0 +1,13 @@
+@use "../presets" as*;
+@use "../mixins" as*;
+
+// *classes - классы
+
+.container {
+    max-width: $ul;
+    padding-left: $gap;
+    padding-right: $gap;
+    // чтобы контейнер стал по середине
+    margin-left: auto;
+    margin-right: auto;
+}
