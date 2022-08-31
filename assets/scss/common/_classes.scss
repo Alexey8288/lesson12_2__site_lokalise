@@ -21,15 +21,19 @@
     border-width: 1px;
     border-style: solid;
     border-radius: 0;
+    // на кнопки при наведении стрелка меняется на пальчик
+    cursor: pointer;
 }
 
 .btn--light {
     border-color: $color-gray;
+    background-color: $color-white;
 }
 
 .btn--accent {
     background-color: $color-accent-orange;
     border-color: $color-accent-orange;
+    color: $color-white;
 }
 
 .btn--sm {

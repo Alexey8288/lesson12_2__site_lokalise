@@ -1,10 +1,26 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
+.header-navbar {
+    // способ 2, этот блок занимает все лишнее пространство,
+    // сдвигает кнопки в право 
+    // flex-grow: 1;
 
+    &__list {
+        @include unlist;
+        display: flex;
+        // отступы по строке
+        column-gap: $gap;
+    }
 
-.header-navbar__list {
-@include unlist;
-display: flex;
+    &__item {
+
+    }
+
+    &__link {
+        // обязательно поставить block
+        display: block;
+        //    чтобы кнопка была больше
+        padding: 0.5em $gap;
+    }
 }
-
