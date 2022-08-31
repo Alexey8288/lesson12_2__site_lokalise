@@ -1,3 +1,51 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
+.header-content {
+
+    display: grid;
+    grid-template-areas: "ttl pic"
+        "dsc pic"
+        "act pic"
+        "nts pic";
+    //  задаем размер левая (текст) и правая сторона (картинка)
+    grid-template-columns: 580px 1fr;
+    // отступы по строкам
+    row-gap: $gap;
+    padding-top: $gap * 4;
+    padding-bottom: $gap * 4;;
+
+    &__title {
+        grid-area: ttl;
+
+        font-weight: 600;
+        font-size: 65px;
+        line-height: 70px;
+        margin: 0;
+    }
+
+    &__description {
+        grid-area: dsc;
+
+        font-size: 25px;
+        line-height: 35px;
+        padding-right: 70px;
+    }
+
+    &__actions {
+        grid-area: act;
+        display: flex;
+        gap: $gap-sm;
+    }
+
+    &__notes {
+        grid-area: nts;
+
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    &__pictures {
+        grid-area: pic;
+    }
+}

@@ -28,6 +28,10 @@
 .btn--light {
     border-color: $color-gray;
     background-color: $color-white;
+
+}
+.btn--light:hover {
+    
 }
 
 .btn--accent {
@@ -39,4 +43,9 @@
 .btn--sm {
     min-width: 120px;
     height: 45px;
+}
+
+.btn--md {
+    min-width: 160px;
+    height: 60px;
 }
