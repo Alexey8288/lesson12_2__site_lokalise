@@ -30,6 +30,7 @@
     background-color: $color-white;
 
 }
+
 .btn--light:hover {
     box-shadow: 0 0 7px $color-accent-orange;
 }
@@ -50,6 +51,14 @@
 }
 
 .btn--md {
-    min-width: 160px;
-    height: 60px;
+
+    @include sm-min {
+        min-width: 160px;
+        height: 60px;
+    }
+
+    @include sm {
+        min-width: 140px;
+        height: 50px;
+    }
 }

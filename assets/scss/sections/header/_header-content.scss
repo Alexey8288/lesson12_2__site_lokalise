@@ -9,7 +9,7 @@
     row-gap: $gap;
     padding-top: $gap * 2;
     padding-bottom: $gap * 2;
-    // центрирует по высоте
+    // !центрирует по высоте
     margin-top: auto;
     margin-bottom: auto;
 
@@ -19,7 +19,7 @@
             "dsc pic"
             "act pic"
             "nts pic";
-        //  задаем размер левая (текст) и правая сторона (картинка)
+        //  !задаем размер левая (текст) и правая сторона (картинка)
         grid-template-columns: 580px 1fr;
     }
 
@@ -37,11 +37,9 @@
             "pic"
             "act"
             "nts";
-        // ставит по центру
+        // !ставит по центру
         text-align: center;
     }
-
-
 
     &__title {
         grid-area: ttl;
@@ -64,9 +62,12 @@
         grid-area: dsc;
         line-height: 35px;
 
-
-        @include lg-min {
+        @include xl-min {
             padding-right: 70px;
+        }
+
+        @include xl-lg {
+            padding-right: 20px;
         }
 
         @include sm-min {
@@ -106,17 +107,17 @@
 
     &__image {
 
-
         @include lg-min {
-            // ширина картинки
+            // !ширина картинки
             width: 100%;
         }
 
         @include lg-md {
             width: 60%;
         }
-                  @include md {
-                      width: 80%;
-                  }
+
+        @include md {
+            width: 80%;
+        }
     }
 }
