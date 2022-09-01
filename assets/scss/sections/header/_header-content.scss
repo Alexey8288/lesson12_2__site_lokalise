@@ -4,12 +4,7 @@
 .header-content {
 
     display: grid;
-    grid-template-areas: "ttl pic"
-        "dsc pic"
-        "act pic"
-        "nts pic";
-    //  задаем размер левая (текст) и правая сторона (картинка)
-    grid-template-columns: 580px 1fr;
+
     // отступы по строкам
     row-gap: $gap;
     padding-top: $gap * 2;
@@ -18,29 +13,79 @@
     margin-top: auto;
     margin-bottom: auto;
 
-    @include xl {}
+    // !все что выше 1200px
+    @include xl-min {
+        grid-template-areas: "ttl pic"
+            "dsc pic"
+            "act pic"
+            "nts pic";
+        //  задаем размер левая (текст) и правая сторона (картинка)
+        grid-template-columns: 580px 1fr;
+    }
+
+    @include xl-lg {
+        grid-template-areas: "ttl pic"
+            "dsc pic"
+            "act pic"
+            "nts pic";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include lg {
+        grid-template-areas: "ttl"
+            "dsc"
+            "pic"
+            "act"
+            "nts";
+        // ставит по центру
+        text-align: center;
+    }
+
+
 
     &__title {
         grid-area: ttl;
 
         font-weight: 600;
-        font-size: 65px;
+
         line-height: 70px;
         margin: 0;
+
+        @include sm-min {
+            font-size: 65px;
+        }
+
+        @include sm {
+            font-size: 45px;
+        }
     }
 
     &__description {
         grid-area: dsc;
-
-        font-size: 25px;
         line-height: 35px;
-        padding-right: 70px;
+
+
+        @include lg-min {
+            padding-right: 70px;
+        }
+
+        @include sm-min {
+            font-size: 25px;
+        }
+
+        @include sm {
+            font-size: 20px;
+        }
     }
 
     &__actions {
         grid-area: act;
         display: flex;
         gap: $gap-sm;
+
+        @include lg {
+            justify-content: center;
+        }
     }
 
     &__notes {
@@ -48,14 +93,30 @@
 
         font-size: 15px;
         line-height: 25px;
+
     }
 
     &__pictures {
         grid-area: pic;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
     &__image {
-        // ширина картинки
-        width: 100%;
+
+
+        @include lg-min {
+            // ширина картинки
+            width: 100%;
+        }
+
+        @include lg-md {
+            width: 60%;
+        }
+                  @include md {
+                      width: 80%;
+                  }
     }
 }
