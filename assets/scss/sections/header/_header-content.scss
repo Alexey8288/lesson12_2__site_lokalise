@@ -12,8 +12,13 @@
     grid-template-columns: 580px 1fr;
     // отступы по строкам
     row-gap: $gap;
-    padding-top: $gap * 4;
-    padding-bottom: $gap * 4;;
+    padding-top: $gap * 2;
+    padding-bottom: $gap * 2;
+    // центрирует по высоте
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @include xl {}
 
     &__title {
         grid-area: ttl;
@@ -47,5 +52,10 @@
 
     &__pictures {
         grid-area: pic;
+    }
+
+    &__image {
+        // ширина картинки
+        width: 100%;
     }
 }

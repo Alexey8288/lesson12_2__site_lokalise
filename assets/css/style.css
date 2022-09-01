@@ -208,7 +208,7 @@ a {
 }
 
 .container {
-  max-width: 1370px;
+  max-width: 1330px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -236,10 +236,20 @@ a {
   background-color: #ffffff;
 }
 
+.btn--light:hover {
+  -webkit-box-shadow: 0 0 7px #ff6336;
+          box-shadow: 0 0 7px #ff6336;
+}
+
 .btn--accent {
   color: #ffffff;
   border-color: #ff6336;
   background-color: #ff6336;
+}
+
+.btn--accent:hover {
+  -webkit-box-shadow: 0 0 7px #ff6336;
+          box-shadow: 0 0 7px #ff6336;
 }
 
 .btn--sm {
@@ -262,6 +272,8 @@ a {
       flex-direction: column;
 
   min-height: 100vh;
+
+  background-color: #ffffff;
 }
 
 .header-menu {
@@ -330,8 +342,10 @@ a {
 .header-content {
   display: grid;
 
-  padding-top: 80px;
-  padding-bottom: 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   grid-template-areas: "ttl pic" "dsc pic" "act pic" "nts pic";
   grid-template-columns: 580px 1fr;
@@ -370,4 +384,7 @@ a {
 }
 .header-content__pictures {
   grid-area: pic;
+}
+.header-content__image {
+  width: 100%;
 }

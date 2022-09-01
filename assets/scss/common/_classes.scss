@@ -31,13 +31,17 @@
 
 }
 .btn--light:hover {
-    
+    box-shadow: 0 0 7px $color-accent-orange;
 }
 
 .btn--accent {
     background-color: $color-accent-orange;
     border-color: $color-accent-orange;
     color: $color-white;
+}
+
+.btn--accent:hover {
+    box-shadow: 0 0 7px $color-accent-orange;
 }
 
 .btn--sm {
