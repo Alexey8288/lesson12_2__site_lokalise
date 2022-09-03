@@ -14,15 +14,27 @@
         // отступы по строке
         column-gap: $gap;
 
+       
+
+
         // меньше 768 px список меню пропадает
         @include md {
             display: none;
+
+             background-color: $color-accent-orange;
+        position: absolute;
+        // сдвием в низ
+        top: 100%;
+        // растягивает по ширине
+        left: 0;
+        right: 0;
+        // тени
+box-shadow: 0 5px 10px black;
         }
     }
 
     .header-navbar__list--active {
-display: block;
-
+        display: block;
     }
 
     &__item {}
