@@ -7,11 +7,17 @@
     // flex-grow: 1;
 
     &__list {
+        // делает не списком
         @include unlist;
         display: flex;
         flex-wrap: wrap;
         // отступы по строке
         column-gap: $gap;
+
+        // меньше 768 px список меню пропадает
+        @include md {
+            display: none;
+        }
     }
 
     &__item {}
@@ -30,10 +36,12 @@
 
 
 .header-navbar__btn {
-// гамбургер отображается менше 768px
+
+    // гамбургер отображается менше 768px
     @include md-min {
         display: none;
     }
+
     // *уменьшаем физические габариты гамбургерга, уменьшаем в два раза (делим размеры на 2)
     // width: 60px;
     width: 30px;
@@ -76,8 +84,8 @@
 
         &:nth-child(3) {
             // top: 36px;
-                top: 18px;
-                background: #ff6336;
+            top: 18px;
+            background: #ff6336;
         }
     }
 

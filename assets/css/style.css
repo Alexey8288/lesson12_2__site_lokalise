@@ -517,6 +517,21 @@ a {
   }
 }
 @media (max-width: 767.8px) {
+  .header-menu {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .header-navbar__list {
+    display: none;
+  }
+  .header-actions {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    width: 100%;
+  }
   .header-content__image {
     width: 80%;
   }
