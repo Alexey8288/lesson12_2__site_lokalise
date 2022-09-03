@@ -9,18 +9,91 @@
     &__list {
         @include unlist;
         display: flex;
+        flex-wrap: wrap;
         // отступы по строке
         column-gap: $gap;
     }
 
-    &__item {
-
-    }
+    &__item {}
 
     &__link {
         // обязательно поставить block
         display: block;
         //    чтобы кнопка была больше
         padding: 0.5em $gap;
+    }
+}
+
+.header-navbar__btn {}
+
+/* Icon 1 */
+// !вместо id #nav-icon1 ставим имя своего класса
+// !обязательно прописываем название класса в файле js
+
+
+.header-navbar__btn {
+    // *уменьшаем физические габариты гамбургерга, уменьшаем в два раза (делим размеры на 2)
+    // width: 60px;
+    width: 30px;
+    // height: 45px;
+    height: 22.5px;
+    position: relative;
+    // margin: 50px auto;
+    margin: 25px auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+
+    span {
+        // *уменьшаем физические размеры шрифта, уменьшаем в два раза (делим размеры на 2)
+        display: block;
+        position: absolute;
+        // height: 9px;
+        height: 5px;
+        width: 100%;
+        background: $color-accent-orange;
+        // border-radius: 9px;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+
+        // можно поменять цвета
+        &:nth-child(1) {
+            top: 0px;
+            background: #a4a14a;
+        }
+
+        &:nth-child(2) {
+            // top: 18px;
+            top: 9px;
+            background: #ffc500;
+        }
+
+        &:nth-child(3) {
+            // top: 36px;
+                top: 18px;
+                background: #ff6336;
+        }
+    }
+
+    &.open span:nth-child(1) {
+        // top: 18px;
+        top: 9px;
+        transform: rotate(135deg);
+    }
+
+    &.open span:nth-child(2) {
+        opacity: 0;
+        // left: -60px;
+        left: -30px;
+    }
+
+    &.open span:nth-child(3) {
+        // top: 18px;
+        top: 9px;
+        transform: rotate(-135deg);
     }
 }

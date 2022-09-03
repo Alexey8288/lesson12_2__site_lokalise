@@ -3,6 +3,7 @@
 
 .header-menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: $gap;
     padding-bottom: $gap;
@@ -12,6 +13,7 @@
     // *2 способ линии
     position: relative;
 
+    // !смотри еще свойство в htm (overflow-x: hidden;)
     &::after {
         content: "";
         position: absolute;
