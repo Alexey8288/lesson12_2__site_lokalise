@@ -326,6 +326,9 @@ a {
      -moz-column-gap: 20px;
           column-gap: 20px;
 }
+.header-navbar .header-navbar__list--active {
+  display: block;
+}
 .header-navbar__link {
   display: block;
 
