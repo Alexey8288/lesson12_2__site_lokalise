@@ -471,6 +471,11 @@ a {
     font-size: 25px;
   }
 }
+@media (min-width: 768px) {
+  .header-navbar__btn {
+    display: none;
+  }
+}
 @media (min-width: 992px) {
   .header-content__image {
     width: 100%;
