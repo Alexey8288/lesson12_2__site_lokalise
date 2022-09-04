@@ -1,0 +1,58 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.brands {
+    background-color: $color-bg-accent-orange;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__title {
+        max-width: 720px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: center;
+        // *у заголовка есть свои отступы, обнуляем
+        // *с помощью auto ставим по центру по горизонтали
+        margin: 0 auto 40px auto;
+
+        @include sm-min {
+            font-size: 50px;
+        }
+
+        @include sm {
+            font-size: 40px;
+        }
+    }
+
+    &__list {
+        // *лучше grid, удобней в мобильной версии
+        display: grid;
+        // выравниваем по вертикали
+        align-items: center;
+        // отступы верх/низ лево/право
+        gap: ($gap * 2) $gap;
+
+        @include xl-min {
+            // ставим в строку
+            grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+            // растягивает по ширине
+            justify-content: space-between;
+        }
+
+        @include xl-lg {
+            grid-template-columns: repeat(3, minmax(50px, max-content));
+            justify-content: space-evenly;
+        }
+
+        @include lg-sm {
+            grid-template-columns: repeat(2, minmax(50px, max-content));
+            justify-content: space-evenly;
+        }
+
+        @include sm {
+            justify-content: center;
+        }
+    }
+
+    &-item {}
+}

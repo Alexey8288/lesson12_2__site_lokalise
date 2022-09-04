@@ -2,9 +2,7 @@
 @use "../../mixins" as *;
 
 .header-content {
-
     display: grid;
-
     // отступы по строкам
     row-gap: $gap;
     padding-top: $gap * 2;
