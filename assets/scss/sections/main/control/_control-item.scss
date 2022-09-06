@@ -2,20 +2,16 @@
 @use "../../../mixins" as *;
 
 .control-item {
-display: flex;
+    display: flex;
+    padding-top: 100px;
+    margin-bottom: 150px;
 }
 
-.control-item__contant {
+.control-item__contant {}
 
-}
+.control-item__contant-title {}
 
-.control-item__contant-title {
-
-}
-
-.control-item__contant-description {
-
-}
+.control-item__contant-description {}
 
 .control-item__contant-actions {}
 
