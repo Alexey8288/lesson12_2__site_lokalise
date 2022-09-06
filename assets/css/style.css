@@ -483,6 +483,11 @@ a {
 
   gap: 40px 20px;
 }
+.control-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media (min-width: 576px) {
   .btn--md {
     min-width: 160px;
