@@ -2,21 +2,110 @@
 @use "../../../mixins" as *;
 
 .control-item {
-    display: flex;
+    display: grid;
+
+    gap: $gap;
     padding-top: 100px;
     margin-bottom: 150px;
+
+    @include xl-min {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include xl {
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+            margin-bottom: 50px;
+    }
+         @include md {
+             padding-top: 0px;
+             margin-bottom: 0px;
+         }
 }
 
-.control-item__contant {}
+.control-item__contant {
+    max-width: 520px;
+   
+    @include xl {
+             margin: auto;
+        }
+}
 
-.control-item__contant-title {}
+.control-item__contant--md {
 
-.control-item__contant-description {}
 
-.control-item__contant-actions {}
+    @include xl-min {
+        margin-left: auto;
+    }
+}
 
-.control-item__contant-link {}
+.control-item__contant-title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+    color: #000000;
+    padding-top: 107px;
+    margin-bottom: 30px;
 
-.control-item__picture {}
+       
+@include xl {
+       text-align: center;
+    }
+    @include sm {
+        font-size: 40px;
+        padding-top: 70px;
+    }
+}
 
-.control-item__image {}
+.control-item__contant-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 30px;
+    @include xl {
+            text-align: center;
+        }
+}
+
+.control-item__contant-actions {
+
+    @include xl {
+            text-align: center;
+            margin-bottom: 150px;
+        }
+                 @include md {
+                     margin-bottom: 100px;
+                 }
+                                  @include sm {
+                                      margin-bottom: 50px;
+                                  }
+}
+
+.control-item__contant-link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.control-item__picture {
+    display: flex;
+    justify-content: center;
+}
+
+.control-item__picture--md {
+
+    @include xl-min {
+        order: -1;
+    }
+}
+
+.control-item__image {
+    // !ширина картинки
+    width: 100%;
+
+    @include xl {
+        width: 80%;
+    }
+}
