@@ -735,4 +735,7 @@ a {
   .control-item__contant-actions {
     margin-bottom: 50px;
   }
+  .control-item__image {
+    width: 90%;
+  }
 }
