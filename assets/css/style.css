@@ -331,6 +331,14 @@ a {
 
   padding: 0.5em 20px;
 }
+.header-navbar__link:hover {
+  border-radius: 8px;
+  background: #ff6336;
+}
+.header-navbar__link.active {
+  border-radius: 8px;
+  background: #ff6336;
+}
 .header-navbar__btn {
   position: relative;
 

@@ -47,8 +47,21 @@
         display: block;
         //    чтобы кнопка была больше
         padding: 0.5em $gap;
+
+        // !при наведении мышки
+        &:hover {
+            background: $color-accent-orange;
+            border-radius: 8px;
+        }
+
+        // !при выборе, показываает активную вкладку
+        &.active {
+            background: $color-accent-orange;
+            border-radius: 8px;
+        }
     }
 }
+
 
 /* Icon 1 */
 // !вместо id #nav-icon1 ставим имя своего класса
