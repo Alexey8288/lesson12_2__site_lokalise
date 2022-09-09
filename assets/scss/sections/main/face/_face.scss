@@ -1,0 +1,30 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+.face {
+
+    &-content {
+
+
+        &__description {}
+
+
+        &__name {}
+
+        &__logo {}
+
+        &__image {}
+
+
+
+    }
+
+    &-picture {
+
+        &__image {}
+
+    }
+
+
+}
