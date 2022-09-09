@@ -609,6 +609,73 @@ a {
   font-weight: 400;
   line-height: 25px;
 }
+
+.teams {
+  padding-top: 112px;
+  padding-bottom: 150px;
+}
+.teams__title {
+  margin-bottom: 73px;
+
+  text-align: center;
+
+  color: #000000;
+
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.teams-box {
+  display: grid;
+
+  gap: 20px;
+}
+.teams-box__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.teams-box__item-title {
+  margin-bottom: 34px;
+
+  color: #000000;
+
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.teams-box__item-picture {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+
+  min-height: 201px;
+  margin-bottom: 36px;
+}
+.teams-box__item-description {
+  margin-bottom: 25px;
+
+  color: #000000;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.teams-box__item-link {
+  color: #000000;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
 @media (min-width: 576px) {
   .btn--md {
     min-width: 160px;
@@ -639,6 +706,9 @@ a {
 @media (min-width: 992px) {
   .header-content__image {
     width: 100%;
+  }
+  .teams-box {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1200px) {
@@ -727,6 +797,10 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+  .teams-box {
+    gap: 70px 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 991.8px) and (min-width: 576px) {
@@ -821,5 +895,23 @@ a {
   }
   .apps-box {
     grid-template-columns: 1fr;
+  }
+  .teams {
+    padding-top: 50px;
+  }
+  .teams__title {
+    font-size: 40px;
+  }
+  .teams-box {
+    gap: 80px;
+    grid-template-columns: 1fr;
+  }
+  .teams-box__item {
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+  }
+  .teams-box__item {
+    text-align: center;
   }
 }
