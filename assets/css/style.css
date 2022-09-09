@@ -548,8 +548,6 @@ a {
 
 .apps {
   margin-top: 50px;
-  padding-top: 80px;
-  padding-bottom: 148px;
 
   background-color: #fff8e4;
 }
@@ -624,6 +622,10 @@ a {
   }
   .brands__title {
     font-size: 50px;
+  }
+  .apps {
+    padding-top: 80px;
+    padding-bottom: 148px;
   }
   .apps-title {
     font-size: 50px;
@@ -809,6 +811,10 @@ a {
   }
   .control-item__image {
     width: 90%;
+  }
+  .apps {
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
   .apps-title {
     font-size: 40px;
