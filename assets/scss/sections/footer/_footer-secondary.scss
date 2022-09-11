@@ -25,13 +25,14 @@
     &__name {
         display: flex;
         gap: 14px;
-       
+
         @include xxl {
             padding-left: $gap;
         }
-                 @include sm {
-                     padding-right: $gap;
-                 }
+
+        @include sm {
+            padding-right: $gap;
+        }
 
         &-picture {}
 
@@ -50,11 +51,12 @@
 
     &__copyright {
         @include xxl {
-                padding-right: $gap;
-            }
-                          @include sm {
-                              padding-right: 0;
-                          }
+            padding-right: $gap;
+        }
+
+        @include sm {
+            padding-right: 0;
+        }
 
         &-text {
             font-weight: 400;
