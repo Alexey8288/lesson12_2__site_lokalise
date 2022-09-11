@@ -62,3 +62,17 @@
         height: 50px;
     }
 }
+
+.btn--lg {
+  
+
+        @include sm-min {
+                min-width: 193px;
+                    height: 60px;
+            }
+        
+            @include sm {
+                min-width: 160px;
+                height: 50px;
+            }
+}

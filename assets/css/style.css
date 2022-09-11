@@ -738,7 +738,7 @@ a {
   gap: 67px;
 }
 
-.software-contant_title {
+.software-contant__title {
   color: #000000;
 
   font-size: 35px;
@@ -746,13 +746,13 @@ a {
   line-height: 50px;
 }
 
-.software-contant_picture {
+.software-contant__picture {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
 }
 
-.software-contant_image {
+.software-contant__image {
   max-width: 176px;
 }
 
@@ -764,13 +764,64 @@ a {
   gap: 70px;
 }
 
-.software-picture_image {
+.software-picture__image {
   max-width: 128px;
 }
 
+.tools-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  padding-top: 117px;
+  padding-bottom: 130px;
+}
+.tools__title {
+  max-width: 791px;
+  margin-bottom: 0;
+
+  text-align: center;
+
+  color: #000000;
+
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 75px;
+}
+.tools__descripton {
+  max-width: 540px;
+  margin-bottom: 15px;
+
+  text-align: center;
+
+  color: #000000;
+
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.tools__picture {
+  margin-bottom: 35px;
+
+  text-align: center;
+}
+.tools__image {
+  width: 100%;
+}
 @media (min-width: 576px) {
   .btn--md {
     min-width: 160px;
+    height: 60px;
+  }
+  .btn--lg {
+    min-width: 193px;
     height: 60px;
   }
   .header-content__title {
@@ -790,13 +841,11 @@ a {
     font-size: 50px;
   }
 }
-
 @media (min-width: 768px) {
   .header-navbar__btn {
     display: none;
   }
 }
-
 @media (min-width: 992px) {
   .header-content__image {
     width: 100%;
@@ -805,7 +854,6 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (min-width: 1200px) {
   .header-content {
     grid-template-areas: "ttl pic" "dsc pic" "act pic" "nts pic";
@@ -836,7 +884,7 @@ a {
   .apps-box {
     grid-template-columns: repeat(3, 1fr);
   }
-  .software-contant_title {
+  .software-contant__title {
     padding-right: 125px;
   }
   .software-picture {
@@ -845,7 +893,6 @@ a {
     border-left: 1px solid black;
   }
 }
-
 @media (max-width: 1199.8px) {
   .control-item {
     margin-bottom: 50px;
@@ -883,11 +930,10 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .software-contant_title {
+  .software-contant__title {
     text-align: center;
   }
 }
-
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .header-content {
     grid-template-areas: "ttl pic" "dsc pic" "act pic" "nts pic";
@@ -905,7 +951,6 @@ a {
     grid-template-columns: repeat(3, minmax(50px, max-content));
   }
 }
-
 @media (max-width: 991.8px) {
   .header-content {
     text-align: center;
@@ -933,8 +978,10 @@ a {
   .software-contant {
     gap: 20px;
   }
+  .tools-container {
+    padding-top: 100px;
+  }
 }
-
 @media (max-width: 991.8px) and (min-width: 576px) {
   .brands__list {
     -webkit-box-pack: space-evenly;
@@ -945,13 +992,11 @@ a {
     grid-template-columns: repeat(2, minmax(50px, max-content));
   }
 }
-
 @media (max-width: 991.8px) and (min-width: 768px) {
   .header-content__image {
     width: 60%;
   }
 }
-
 @media (max-width: 767.8px) {
   .header-menu {
     -webkit-box-pack: center;
@@ -996,11 +1041,17 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .tools-container {
+    padding-top: 75px;
+  }
 }
-
 @media (max-width: 575.8px) {
   .btn--md {
     min-width: 140px;
+    height: 50px;
+  }
+  .btn--lg {
+    min-width: 160px;
     height: 50px;
   }
   .header-content__title {
@@ -1062,5 +1113,11 @@ a {
     padding-bottom: 50px;
 
     gap: 35px;
+  }
+  .tools-container {
+    padding-top: 50px;
+  }
+  .tools__title {
+    font-size: 45px;
   }
 }
