@@ -1,0 +1,92 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+
+
+.footer-primary {
+    display: flex;
+    gap: 120px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid black;
+
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        gap: 10px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+        color: #000000;
+    }
+
+    &__pictures {
+        margin-bottom: 20px;
+    }
+
+    &__image {}
+
+    &__logo {
+
+
+        &-image {}
+    }
+
+
+
+    &__description {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    &__actions {}
+
+    &__link {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+
+    &__content {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 187px;
+            background-color: green;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25px;
+            color: #000000;
+        }
+
+        &-action {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 15px;
+            color: #000000;
+        }
+
+
+    }
+
+
+}
