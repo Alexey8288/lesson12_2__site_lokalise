@@ -711,6 +711,63 @@ a {
   font-weight: 400;
   line-height: 25px;
 }
+.software {
+  background-color: #dabc98;
+}
+
+.software-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.software-contant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  gap: 67px;
+}
+
+.software-contant_title {
+  color: #000000;
+
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.software-contant_picture {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.software-contant_image {
+  max-width: 176px;
+}
+
+.software-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  gap: 70px;
+}
+
+.software-picture_image {
+  max-width: 128px;
+}
+
 @media (min-width: 576px) {
   .btn--md {
     min-width: 160px;
@@ -733,11 +790,13 @@ a {
     font-size: 50px;
   }
 }
+
 @media (min-width: 768px) {
   .header-navbar__btn {
     display: none;
   }
 }
+
 @media (min-width: 992px) {
   .header-content__image {
     width: 100%;
@@ -746,6 +805,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (min-width: 1200px) {
   .header-content {
     grid-template-areas: "ttl pic" "dsc pic" "act pic" "nts pic";
@@ -776,7 +836,16 @@ a {
   .apps-box {
     grid-template-columns: repeat(3, 1fr);
   }
+  .software-contant_title {
+    padding-right: 125px;
+  }
+  .software-picture {
+    padding-left: 70px;
+
+    border-left: 1px solid black;
+  }
 }
+
 @media (max-width: 1199.8px) {
   .control-item {
     margin-bottom: 50px;
@@ -807,7 +876,18 @@ a {
   .apps-box {
     grid-template-columns: repeat(2, 1fr);
   }
+  .software-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .software-contant_title {
+    text-align: center;
+  }
 }
+
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .header-content {
     grid-template-areas: "ttl pic" "dsc pic" "act pic" "nts pic";
@@ -825,6 +905,7 @@ a {
     grid-template-columns: repeat(3, minmax(50px, max-content));
   }
 }
+
 @media (max-width: 991.8px) {
   .header-content {
     text-align: center;
@@ -849,7 +930,11 @@ a {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
   }
+  .software-contant {
+    gap: 20px;
+  }
 }
+
 @media (max-width: 991.8px) and (min-width: 576px) {
   .brands__list {
     -webkit-box-pack: space-evenly;
@@ -860,11 +945,13 @@ a {
     grid-template-columns: repeat(2, minmax(50px, max-content));
   }
 }
+
 @media (max-width: 991.8px) and (min-width: 768px) {
   .header-content__image {
     width: 60%;
   }
 }
+
 @media (max-width: 767.8px) {
   .header-menu {
     -webkit-box-pack: center;
@@ -902,7 +989,15 @@ a {
   .control-item__contant-actions {
     margin-bottom: 100px;
   }
+  .software-contant {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
+
 @media (max-width: 575.8px) {
   .btn--md {
     min-width: 140px;
