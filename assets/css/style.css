@@ -270,6 +270,11 @@ a {
           box-shadow: 0 0 7px black;
 }
 
+a:hover {
+  -webkit-box-shadow: 0 0 7px #ff6336;
+          box-shadow: 0 0 7px #ff6336;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;

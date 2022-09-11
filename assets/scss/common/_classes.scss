@@ -85,3 +85,7 @@
 .btn--black:hover {
     box-shadow: 0 0 7px black;
 }
+
+a:hover {
+    box-shadow: 0 0 7px $color-accent-orange;
+}
