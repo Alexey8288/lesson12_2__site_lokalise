@@ -76,3 +76,12 @@
                 height: 50px;
             }
 }
+
+.btn--black {
+        background-color: black;
+            border-color: black;
+            color: $color-white;
+}
+.btn--black:hover {
+    box-shadow: 0 0 7px black;
+}
