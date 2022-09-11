@@ -16,10 +16,12 @@
 
         @include md {
             padding-top: 75px;
+            
         }
 
         @include sm {
             padding-top: 50px;
+                padding-bottom: 105px;
         }
     }
 

@@ -1033,6 +1033,10 @@ a {
   .tools-container {
     padding-top: 100px;
   }
+  .made-container {
+    padding-top: 45px;
+    padding-bottom: 110px;
+  }
 }
 @media (max-width: 991.8px) and (min-width: 576px) {
   .brands__list {
@@ -1168,8 +1172,16 @@ a {
   }
   .tools-container {
     padding-top: 50px;
+    padding-bottom: 105px;
   }
   .tools__title {
+    font-size: 45px;
+  }
+  .made-container {
+    padding-top: 12px;
+    padding-bottom: 70px;
+  }
+  .made__title {
     font-size: 45px;
   }
 }

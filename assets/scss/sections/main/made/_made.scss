@@ -9,6 +9,16 @@ background-color: #ff9c7d;
         align-items: center;
         padding-top: 70px;
         padding-bottom: 155px;
+@include lg {
+        padding-top: 45px;
+        padding-bottom: 110px;
+    }
+
+        @include sm {
+            padding-top: 12px;
+            padding-bottom: 70px;
+        }
+        
     }
 
     &__title {
@@ -19,6 +29,10 @@ background-color: #ff9c7d;
             line-height: 75px;
             text-align: center;
             color: #000000;
+
+            @include sm {
+                font-size: 45px;
+            }
     }
 
     &__description {
