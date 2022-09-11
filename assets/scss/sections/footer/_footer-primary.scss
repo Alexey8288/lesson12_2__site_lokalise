@@ -1,31 +1,27 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-
-
 .footer-primary {
     display: flex;
     gap: 140px;
     padding-top: 90px;
     padding-bottom: 95px;
-    border-bottom: 1px solid black;
+   
 
     @include xl {
         gap: 50px;
-        }
+    }
 
     @include lg {
-            flex-direction: column;
-            align-items: center;
-        }
-
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__box {
         display: flex;
         flex-direction: column;
         max-width: 300px;
         gap: 10px;
-    
     }
 
     &__title {
@@ -44,11 +40,8 @@
 
     &__logo {
 
-
         &-image {}
     }
-
-
 
     &__description {
         margin-bottom: 7px;
@@ -69,17 +62,11 @@
 
 
     &__content {
-
-        // display: grid;
-        // grid-template-columns: repeat(4, 1fr);
         display: flex;
         flex-wrap: wrap;
-
         gap: 34px;
+        justify-content: center;
 
-            justify-content: center;
-
-       
 
         &-item {
             display: flex;
@@ -102,9 +89,5 @@
             line-height: 15px;
             color: #000000;
         }
-
-
     }
-
-
 }
