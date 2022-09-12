@@ -7,24 +7,27 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    // размер для просчета отступов 
-    font-size: 16px;
-    overflow-x: hidden;
+  overflow-x: hidden;
+  // размер для просчета отступов 
+
+  font-size: 16px;
 }
 
 body {
-    font-family: "Graphik LCG", sans-serif;
-    // размер текста по умолчанию
-    font-size: 15px;
-    font-weight: normal;
-    color: $color-primary-black;
+  color: $color-primary-black;
+
+  font-family: "Graphik LCG", sans-serif;
+  // размер текста по умолчанию
+  font-size: 15px;
+  font-weight: normal;
 }
 
 a {
-    text-decoration: none;
-    color: $color-primary-black;
+  text-decoration: none;
+
+  color: $color-primary-black;
 }

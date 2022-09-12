@@ -3,62 +3,49 @@
 
 
 .face {
-    background-color: #c9e8f2;
+  background-color: #c9e8f2;
 
 
-    &-container {
+  &-container {
+    display: flex;
 
-        display: flex;
-        gap: 85px;
+    padding-top: 55px;
+    padding-bottom: 105px;
 
-        padding-top: 55px;
-        padding-bottom: 105px;
-
-        @include lg {
-            flex-direction: column-reverse;
-            align-items: center;
-        }
-
-        @include sm {
-            gap: 35px;
-            padding-bottom: 50px;
-        }
-
+    gap: 85px;
+    @include lg {
+      align-items: center;
+      flex-direction: column-reverse;
     }
+    @include sm {
+      padding-bottom: 50px;
 
-    &-content {
-        max-width: 920px;
-
-        &__description {
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 40px;
-            color: #000000;
-            padding-bottom: 25px;
-        }
-
-
-        &__name {
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 25px;
-            color: #000000;
-            padding-bottom: 7px;
-        }
-
-        &__logo {}
-
-        &__image {}
-
-
-
+      gap: 35px;
     }
+  }
 
-    &-picture {
+  &-content {
+    max-width: 920px;
 
-        &__image {}
+    &__description {
+      padding-bottom: 25px;
 
+      color: #000000;
+
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 40px;
     }
 
 
+    &__name {
+      padding-bottom: 7px;
+
+      color: #000000;
+
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
 }

@@ -4,88 +4,86 @@
 // *classes - классы
 
 .container {
-    max-width: $ul;
-    padding-left: $gap;
-    padding-right: $gap;
-    // чтобы контейнер стал по середине
-    margin-left: auto;
-    margin-right: auto;
+  max-width: $ul;
+  margin-right: auto;
+  // чтобы контейнер стал по середине
+  margin-left: auto;
+  padding-right: $gap;
+  padding-left: $gap;
 }
 
 .btn {
-    display: block;
-    padding: 0.5em 1em;
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 0;
-    // на кнопки при наведении стрелка меняется на пальчик
-    cursor: pointer;
+  display: block;
+
+  padding: 0.5em 1em;
+  // на кнопки при наведении стрелка меняется на пальчик
+
+  cursor: pointer;
+  text-align: center;
+
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0;
+
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .btn--light {
-    border-color: $color-gray;
-    background-color: $color-white;
-
+  border-color: $color-gray;
+  background-color: $color-white;
 }
 
 .btn--light:hover {
-    box-shadow: 0 0 7px $color-accent-orange;
+  box-shadow: 0 0 7px $color-accent-orange;
 }
 
 .btn--accent {
-    background-color: $color-accent-orange;
-    border-color: $color-accent-orange;
-    color: $color-white;
+  color: $color-white;
+  border-color: $color-accent-orange;
+  background-color: $color-accent-orange;
 }
 
 .btn--accent:hover {
-    box-shadow: 0 0 7px $color-accent-orange;
+  box-shadow: 0 0 7px $color-accent-orange;
 }
 
 .btn--sm {
-    min-width: 120px;
-    height: 45px;
+  min-width: 120px;
+  height: 45px;
 }
 
 .btn--md {
-
-    @include sm-min {
-        min-width: 160px;
-        height: 60px;
-    }
-
-    @include sm {
-        min-width: 140px;
-        height: 50px;
-    }
+  @include sm-min {
+    min-width: 160px;
+    height: 60px;
+  }
+  @include sm {
+    min-width: 140px;
+    height: 50px;
+  }
 }
 
 .btn--lg {
-  
-
-        @include sm-min {
-                min-width: 193px;
-                    height: 60px;
-            }
-        
-            @include sm {
-                min-width: 160px;
-                height: 50px;
-            }
+  @include sm-min {
+    min-width: 193px;
+    height: 60px;
+  }
+  @include sm {
+    min-width: 160px;
+    height: 50px;
+  }
 }
 
 .btn--black {
-        background-color: black;
-            border-color: black;
-            color: $color-white;
+  color: $color-white;
+  border-color: black;
+  background-color: black;
 }
 .btn--black:hover {
-    box-shadow: 0 0 7px black;
+  box-shadow: 0 0 7px black;
 }
 
 a:hover {
-    box-shadow: 0 0 7px $color-accent-orange;
+  box-shadow: 0 0 7px $color-accent-orange;
 }

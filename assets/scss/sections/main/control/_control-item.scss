@@ -2,119 +2,116 @@
 @use "../../../mixins" as *;
 
 .control-item {
-    display: grid;
+  display: grid;
 
-    gap: $gap;
-    padding-top: 100px;
-    margin-bottom: 150px;
+  margin-bottom: 150px;
+  padding-top: 100px;
 
-    @include xl-min {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  gap: $gap;
+  @include xl-min {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include xl {
+    margin-bottom: 50px;
+    padding-top: 50px;
 
-    @include xl {
-        grid-template-columns: 1fr;
-        padding-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    @include md {
-        padding-top: 0px;
-        margin-bottom: 0px;
-    }
+    grid-template-columns: 1fr;
+  }
+  @include md {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 .control-item__contant {
-    max-width: 520px;
+  max-width: 520px;
 
-    @include xl {
-        margin: auto;
-    }
+  @include xl {
+    margin: auto;
+  }
 }
 
 .control-item__contant--md {
-
-
-    @include xl-min {
-        margin-left: auto;
-    }
+  @include xl-min {
+    margin-left: auto;
+  }
 }
 
 .control-item__contant-title {
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 60px;
-    color: #000000;
-    padding-top: 107px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  padding-top: 107px;
 
+  color: #000000;
 
-    @include xl {
-        text-align: center;
-    }
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
 
-    @include sm {
-        font-size: 40px;
-        padding-top: 70px;
-    }
+  @include xl {
+    text-align: center;
+  }
+  @include sm {
+    padding-top: 70px;
+
+    font-size: 40px;
+  }
 }
 
 .control-item__contant-description {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #000000;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    @include xl {
-        text-align: center;
-    }
+  color: #000000;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+
+  @include xl {
+    text-align: center;
+  }
 }
 
 .control-item__contant-actions {
+  @include xl {
+    margin-bottom: 150px;
 
-    @include xl {
-        text-align: center;
-        margin-bottom: 150px;
-    }
-
-    @include md {
-        margin-bottom: 100px;
-    }
-
-    @include sm {
-        margin-bottom: 50px;
-    }
+    text-align: center;
+  }
+  @include md {
+    margin-bottom: 100px;
+  }
+  @include sm {
+    margin-bottom: 50px;
+  }
 }
 
 .control-item__contant-link {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    color: #000000;
+  color: #000000;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
 }
 
 .control-item__picture {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .control-item__picture--md {
-
-    @include xl-min {
-        order: -1;
-    }
+  @include xl-min {
+    order: -1;
+  }
 }
 
 .control-item__image {
-    // !ширина картинки
-    width: 100%;
+  // !ширина картинки
+  width: 100%;
 
-    @include xl {
-        width: 80%;
-    }
-
-    @include sm {
-        width: 90%;
-    }
+  @include xl {
+    width: 80%;
+  }
+  @include sm {
+    width: 90%;
+  }
 }

@@ -2,11 +2,12 @@
 @use "../../mixins" as *;
 
 .header-actions {
-    display: flex;
-    gap: $gap-sm;
+  display: flex;
 
-    @include md {
-        width: 100%;
-        justify-content: center;
-    }
+  gap: $gap-sm;
+  @include md {
+    justify-content: center;
+
+    width: 100%;
+  }
 }

@@ -2,52 +2,57 @@
 @use "../../../mixins" as *;
 
 .apps-box {
-    display: grid;
-    gap: 75px 110px;
-justify-items: center;
+  display: grid;
 
-    @include xl-min {
-         grid-template-columns: repeat(3, 1fr); 
-    }
-           @include xl {
-               grid-template-columns: repeat(2, 1fr);
-           }
-                          @include sm {
-                              grid-template-columns: 1fr;
-                          }
+  gap: 75px 110px;
+  @include xl-min {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include xl {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sm {
+    grid-template-columns: 1fr;
+  }
+  justify-items: center;
 }
 
 .apps-item {
-    display: flex;
-    flex-direction: column;
-    max-width: 330px;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 330px;
 
 
-    &__title {
-        font-weight: 600;
-            font-size: 25px;
-            line-height: 35px;
-            text-align: center;
-            color: #000000;
-            margin-bottom: 20px;
-    }
+  &__title {
+    margin-bottom: 20px;
 
-    &__picture {
-         order: -1; 
-        text-align: center;
-        margin-bottom: 20px;
-    }
+    text-align: center;
 
-    &__image {
-      
-    }
+    color: #000000;
 
-    &__description {
-        font-weight: 400;
-            font-size: 18px;
-            line-height: 25px;
-            text-align: center;
-            color: #000000;
-    }
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 35px;
+  }
 
+  &__picture {
+    order: -1;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+
+
+  &__description {
+    text-align: center;
+
+    color: #000000;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
 }

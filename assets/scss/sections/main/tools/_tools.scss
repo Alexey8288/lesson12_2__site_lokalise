@@ -2,62 +2,64 @@
 @use "../../../mixins" as*;
 
 .tools {
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-    &-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 117px;
-        padding-bottom: 155px;
+    padding-top: 117px;
+    padding-bottom: 155px;
 
-        @include lg {
-            padding-top: 100px;
-        }
-
-        @include md {
-            padding-top: 75px;
-            
-        }
-
-        @include sm {
-            padding-top: 50px;
-                padding-bottom: 105px;
-        }
+    @include lg {
+      padding-top: 100px;
     }
-
-    &__title {
-        // padding-top: 170px;
-        max-width: 791px;
-        font-weight: 600;
-        font-size: 65px;
-        line-height: 75px;
-        text-align: center;
-        color: #000000;
-        margin-bottom: 0;
-
-        @include sm {
-            font-size: 45px;
-
-        }
-
+    @include md {
+      padding-top: 75px;
     }
-
-    &__descripton {
-        max-width: 540px;
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 30px;
-        text-align: center;
-        color: #000000;
-        margin-bottom: 15px;
+    @include sm {
+      padding-top: 50px;
+      padding-bottom: 105px;
     }
+  }
 
-    &__picture {
-        margin-bottom: 35px;
-        text-align: center;
-    }
+  &__title {
+    // padding-top: 170px;
+    max-width: 791px;
+    margin-bottom: 0;
 
-    &__image {
-        width: 100%;
+    text-align: center;
+
+    color: #000000;
+
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 75px;
+
+    @include sm {
+      font-size: 45px;
     }
+  }
+
+  &__descripton {
+    max-width: 540px;
+    margin-bottom: 15px;
+
+    text-align: center;
+
+    color: #000000;
+
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__picture {
+    margin-bottom: 35px;
+
+    text-align: center;
+  }
+
+  &__image {
+    width: 100%;
+  }
 }

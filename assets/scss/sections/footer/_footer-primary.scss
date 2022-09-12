@@ -2,92 +2,93 @@
 @use "../../mixins" as *;
 
 .footer-primary {
+  display: flex;
+
+  padding-top: 90px;
+  padding-bottom: 95px;
+
+  gap: 140px;
+  @include xl {
+    gap: 50px;
+  }
+  @include lg {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__box {
     display: flex;
-    gap: 140px;
-    padding-top: 90px;
-    padding-bottom: 95px;
-   
+    flex-direction: column;
 
-    @include xl {
-        gap: 50px;
+    max-width: 300px;
+
+    gap: 10px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+
+    color: #000000;
+
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+
+  &__pictures {
+    margin-bottom: 17px;
+  }
+
+  &__description {
+    margin-bottom: 7px;
+
+    color: #000000;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__link {
+    color: #000000;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 34px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+
+      width: 187px;
+
+      gap: 15px;
     }
 
-    @include lg {
-        flex-direction: column;
-        align-items: center;
+    &-title {
+      margin-bottom: 9px;
+
+      color: #000000;
+
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 25px;
     }
 
-    &__box {
-        display: flex;
-        flex-direction: column;
-        max-width: 300px;
-        gap: 10px;
+    &-action {
+      color: #000000;
+
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 15px;
     }
-
-    &__title {
-        margin-bottom: 16px;
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 50px;
-        color: #000000;
-    }
-
-    &__pictures {
-        margin-bottom: 17px;
-    }
-
-    &__image {}
-
-    &__logo {
-
-        &-image {}
-    }
-
-    &__description {
-        margin-bottom: 7px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000000;
-    }
-
-    &__actions {}
-
-    &__link {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000000;
-    }
-
-
-    &__content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 34px;
-        justify-content: center;
-
-
-        &-item {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 187px;
-        }
-
-        &-title {
-            margin-bottom: 9px;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 25px;
-            color: #000000;
-        }
-
-        &-action {
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 15px;
-            color: #000000;
-        }
-    }
+  }
 }

@@ -2,120 +2,111 @@
 @use "../../mixins" as *;
 
 .header-content {
-    display: grid;
-    // отступы по строкам
-    row-gap: $gap;
-    padding-top: $gap * 2;
-    padding-bottom: $gap * 2;
-    // !центрирует по высоте
-    margin-top: auto;
-    margin-bottom: auto;
+  display: grid;
+  // !центрирует по высоте
 
-    // !все что выше 1200px
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: $gap * 2;
+  padding-bottom: $gap * 2;
+  // !все что выше 1200px
+
+  @include xl-min {
+    grid-template-areas: "ttl pic"
+    "dsc pic"
+    "act pic"
+    "nts pic";
+    //  !задаем размер левая (текст) и правая сторона (картинка)
+    grid-template-columns: 580px 1fr;
+  }
+  @include xl-lg {
+    grid-template-areas: "ttl pic"
+    "dsc pic"
+    "act pic"
+    "nts pic";
+    grid-template-columns: 1fr 1fr;
+  }
+  @include lg {
+    // !ставит по центру
+    text-align: center;
+
+    grid-template-areas: "ttl"
+    "dsc"
+    "pic"
+    "act"
+    "nts";
+  }
+  // отступы по строкам
+  row-gap: $gap;
+
+  &__title {
+    margin: 0;
+
+    font-weight: 600;
+    line-height: 70px;
+
+    grid-area: ttl;
+    @include sm-min {
+      font-size: 65px;
+    }
+    @include sm {
+      font-size: 45px;
+    }
+  }
+
+  &__description {
+    line-height: 35px;
+
+    grid-area: dsc;
     @include xl-min {
-        grid-template-areas: "ttl pic"
-            "dsc pic"
-            "act pic"
-            "nts pic";
-        //  !задаем размер левая (текст) и правая сторона (картинка)
-        grid-template-columns: 580px 1fr;
+      padding-right: 70px;
     }
-
     @include xl-lg {
-        grid-template-areas: "ttl pic"
-            "dsc pic"
-            "act pic"
-            "nts pic";
-        grid-template-columns: 1fr 1fr;
+      padding-right: 20px;
     }
+    @include sm-min {
+      font-size: 25px;
+    }
+    @include sm {
+      font-size: 20px;
+    }
+  }
 
+  &__actions {
+    display: flex;
+
+    gap: $gap-sm;
+    grid-area: act;
     @include lg {
-        grid-template-areas: "ttl"
-            "dsc"
-            "pic"
-            "act"
-            "nts";
-        // !ставит по центру
-        text-align: center;
+      justify-content: center;
     }
+  }
 
-    &__title {
-        grid-area: ttl;
+  &__notes {
+    font-size: 15px;
+    line-height: 25px;
 
-        font-weight: 600;
+    grid-area: nts;
+  }
 
-        line-height: 70px;
-        margin: 0;
+  &__pictures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        @include sm-min {
-            font-size: 65px;
-        }
+    grid-area: pic;
+  }
 
-        @include sm {
-            font-size: 45px;
-        }
+  &__image {
+    @include lg-min {
+      // !ширина картинки
+      width: 100%;
     }
-
-    &__description {
-        grid-area: dsc;
-        line-height: 35px;
-
-        @include xl-min {
-            padding-right: 70px;
-        }
-
-        @include xl-lg {
-            padding-right: 20px;
-        }
-
-        @include sm-min {
-            font-size: 25px;
-        }
-
-        @include sm {
-            font-size: 20px;
-        }
+    @include lg-md {
+      width: 60%;
     }
-
-    &__actions {
-        grid-area: act;
-        display: flex;
-        gap: $gap-sm;
-
-        @include lg {
-            justify-content: center;
-        }
+    @include md {
+      width: 80%;
     }
-
-    &__notes {
-        grid-area: nts;
-
-        font-size: 15px;
-        line-height: 25px;
-
-    }
-
-    &__pictures {
-        grid-area: pic;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    &__image {
-
-        @include lg-min {
-            // !ширина картинки
-            width: 100%;
-        }
-
-        @include lg-md {
-            width: 60%;
-        }
-
-        @include md {
-            width: 80%;
-        }
-    }
+  }
 }

@@ -2,44 +2,45 @@
 @use "../../mixins" as *;
 
 .header-menu {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-top: $gap;
-    padding-bottom: $gap;
-    gap: $gap;
-    // *1 способ линии
-    // border-bottom: 1px solid $color-gray;
-    // *2 способ линии
-    position: relative;
+  // *1 способ линии
+  // border-bottom: 1px solid $color-gray;
+  // *2 способ линии
+  position: relative;
 
-    @include md {
-            justify-content: center;
-    }
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 
-    // !смотри еще свойство в htm (overflow-x: hidden;)
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 100vw;
-        height: 1px;
-        background-color: $color-gray;
-        margin-left: -50vw;
+  padding-top: $gap;
+  padding-bottom: $gap;
 
-    }
+  gap: $gap;
+  @include md {
+    justify-content: center;
+  }
 
-    &__logo {
-        // отступ справа от логотипа
-        padding-right: $gap-sm;
+  // !смотри еще свойство в htm (overflow-x: hidden;)
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 
-    }
+    width: 100vw;
+    height: 1px;
+    margin-left: -50vw;
 
-    &__navbar {}
+    content: "";
 
-    &__actions {
-        // сдвигает кнопки в право
-        margin-left: auto;
-    }
+    background-color: $color-gray;
+  }
+
+  &__logo {
+    // отступ справа от логотипа
+    padding-right: $gap-sm;
+  }
+
+  &__actions {
+    // сдвигает кнопки в право
+    margin-left: auto;
+  }
 }
