@@ -270,7 +270,17 @@ a {
           box-shadow: 0 0 7px black;
 }
 
+a {
+  -webkit-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
+}
+
 a:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+
   -webkit-box-shadow: 0 0 7px #ff6336;
           box-shadow: 0 0 7px #ff6336;
 }
@@ -507,6 +517,7 @@ a:hover {
 
   gap: 40px 20px;
 }
+
 .control-item {
   display: grid;
 
@@ -727,6 +738,7 @@ a:hover {
   font-weight: 400;
   line-height: 25px;
 }
+
 .software {
   background-color: #dabc98;
 }
@@ -872,6 +884,7 @@ a:hover {
   font-size: 20px;
   line-height: 30px;
 }
+
 .footer {
   background-color: #eeeeee;
 }

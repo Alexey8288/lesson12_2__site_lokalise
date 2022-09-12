@@ -84,6 +84,14 @@
   box-shadow: 0 0 7px black;
 }
 
+a {
+  // замедляет эффект
+  transition: 0.5s;
+}
+
 a:hover {
+  // тень при наведении
   box-shadow: 0 0 7px $color-accent-orange;
+  // увеличивает при наведении
+    transform: scale(1.1);
 }
