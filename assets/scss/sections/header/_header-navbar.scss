@@ -48,11 +48,14 @@
     //    чтобы кнопка была больше
 
     padding: 0.5em $gap;
+    transition: 0.5s;
+
 
     // !при наведении мышки
     &:hover {
       border-radius: 8px;
       background: $color-accent-orange;
+      transform: scale(1.2);
     }
 
     // !при выборе, показываает активную вкладку

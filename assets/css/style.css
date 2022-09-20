@@ -356,8 +356,16 @@ a:hover {
   display: block;
 
   padding: 0.5em 20px;
+
+  -webkit-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
 }
 .header-navbar__link:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+
   border-radius: 8px;
   background: #ff6336;
 }
